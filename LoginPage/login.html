@@ -57,7 +57,7 @@
                 return;
             }
 
-            axios.post('http://localhost:3000/login', { email, password })
+            axios.post('https://satyam-invensis.github.io/HsCodeHosting-master/LoginPage/login.html', { email, password })
                 .then(function (response) {
                     console.log(response.data);
                     document.querySelector("#message").innerHTML = response.data.message;
