@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, '../Frontend')));
 
 // CSV Data Handling
 let csvData = [];
-const csvFilePath = path.join(__dirname, 'data.csv');
+const csvFilePath = path.join(__dirname, 'Backend', 'data.csv');
 
 function loadCSV(callback) {
     fs.createReadStream(csvFilePath)
