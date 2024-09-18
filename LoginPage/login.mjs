@@ -7,7 +7,9 @@ import { fileURLToPath } from 'url';
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://satyam-invensis.github.io/HsCodeHosting-master/LoginPage/index.html',
+}));
 
 // Determine current directory for static files
 const __filename = fileURLToPath(import.meta.url);
