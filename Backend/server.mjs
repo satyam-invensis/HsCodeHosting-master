@@ -13,7 +13,9 @@ const __dirname = path.resolve();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+    origin: 'https://satyam-invensis.github.io/HsCodeHosting-master/LoginPage/index.html',
+}));
 
 // Set view engine and static files
 app.set('view engine', 'ejs');
